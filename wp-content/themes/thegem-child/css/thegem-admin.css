@@ -1,0 +1,3 @@
+form#theme-options-form #categories > #activation .activation-field input{
+    display:none !important;
+}
