@@ -27,6 +27,7 @@
 ?>
 
 		</div><!-- #main -->
+		
 		<div id="lazy-loading-point"></div>
 
 		<?php if(!$effects_params['effects_page_scroller'] && !$effects_params['effects_hide_footer']) : ?>
@@ -48,6 +49,53 @@
 				</div>
 			</footer><!-- #colophon -->
 			<?php endif; ?>
+<!-- footer settings using acf -->
+		<?php
+			if(have_rows('footer_settings','option')):
+				while(have_rows('footer_settings','option')):
+					the_row();
+		?>
+					<div class="footer-fullwidth-con">
+						<div class="container">
+							<div class="row">
+								<?php
+									if(have_rows('logo_content_area')):
+										while(have_rows('logo_content_area')):
+											the_row();
+											$footer_logo = get_sub_field('theme_logo');
+								?>
+											<div class="col-sm-4">
+												<?php 
+													if(!empty($footer_logo)): 
+												?>
+													<img src="<?php echo esc_url($footer_logo['url']); ?>" alt="NogardGlobal"/>
+												<?php
+													endif;
+													if(!empty(get_sub_field('telephone_number'))):
+												?>
+														<p class="first">Got Questions? Call Us 24/7!</p>
+														<p class="second"><a href="tel:<?php echo get_sub_field('telephone_number'); ?>"><?php echo get_sub_field('telephone_number'); ?></a></p>
+												<?php 
+													endif;
+												?>
+											</div>
+								<?php 
+										endwhile;
+									endif;
+								?>
+								<div class="col-sm-4">
+
+								</div>
+								<div class="col-sm-4">
+
+								</div>
+							</div>
+						</div>
+					</div>
+		<?php
+				endwhile;
+			endif;
+		?>
 
 			<?php if(thegem_get_option('footer_active') && !$header_params['footer_hide_default']) : ?>
 

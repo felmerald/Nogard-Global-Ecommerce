@@ -1,9 +1,9 @@
 /*
 Theme Name: TheGem Child
-Description: Multi-Purpose Wordpress Theme
-Author: Codex Themes.
-Theme URI: http://codex-themes.com/thegem/
-Author URI: http://codex-themes.com/thegem/
+Description: Child Theme of The gem theme. Fully Costumized.
+Author: Fel Developer.
+Theme URI: https://nogardglobal.net/
+Author URI: https://felmeraldcv.8thstreethostel.com/
 Template: thegem
 Version: 1.0
 Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, theme-options, translation-ready, dark, light
@@ -15,4 +15,40 @@ License URI: license.txt
 }
 .top-area {
     border-top: 5px solid #dab26d !important;
+}
+#footer-nav{
+    border-top:1px solid #eaeaea !important;
+    background-color: #eaeaea !important;
+    .footer-site-info {
+        color: #282a2b !important;
+    }   
+}
+.footer-fullwidth-con{
+    background-color: #f8f8f8;
+    .container{
+        padding: 32px 0px 32px 0px;
+            .row{
+                .col-sm-4:nth-child(1){
+                    img{
+                        width:100%;
+                        height:auto;
+                    }
+                    p{
+                        margin-left:32px;
+                        margin-top:32px;
+                    }
+                    p.first{
+                        font-size:21px;
+                        font-weight: bold;
+                    }
+                    p.second{
+                        font-size: 32px;
+                        margin-top: -10px;
+                        a{
+                            color: #ffc107!important; 
+                        }                  
+                    }
+                }
+            }
+    }
 }
