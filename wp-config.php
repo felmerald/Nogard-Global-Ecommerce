@@ -79,6 +79,13 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', false );
 
+// added by fel dev
+define( 'WP_MEMORY_LIMIT', '256M' );/*increase memory limit */
+define('DISALLOW_FILE_EDIT', true);/*this will disabled Theme Editor in Wordpress Admin*/
+set_time_limit(400); /*increase wordpress timeout */
+@ini_set( 'max_input_vars' , 4000 );
+// end
+
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

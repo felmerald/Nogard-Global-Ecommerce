@@ -38,15 +38,60 @@ License URI: license.txt
                         margin-top:32px;
                     }
                     p.first{
-                        font-size:21px;
+                        font-size:16px;
                         font-weight: bold;
                     }
                     p.second{
-                        font-size: 32px;
+                        font-size: 18px;
                         margin-top: -10px;
                         a{
                             color: #ffc107!important; 
                         }                  
+                    }
+                }
+                .col-sm-4:nth-child(2){
+                    p.title{
+                        font-size:18px;
+                        font-weight: bold;
+                            @media only screen and (max-width:767px){
+                                margin-left:32px;
+                            }
+                    }
+                    .list{
+                        margin-left:32px;
+                            p{
+                                line-height: 0.5;
+                                    a{
+                                        color:#5f727f;
+                                            &:hover{
+                                                color:#dab26d;
+                                            }
+                                    }
+                            }
+                    }
+                    .list:last-child{
+                        margin-top:32px;
+                    }
+                }
+                .col-sm-4:nth-child(3){
+                    p.title{
+                        font-size:18px;
+                        font-weight: bold;
+                            @media only screen and (max-width:767px){
+                                margin-left:32px;
+                            }
+                    }
+                    .list{
+                        margin-left:32px;
+                            p{
+                                line-height: 0.5;
+                                    a{
+                                        color:#5f727f;
+                                            &:hover{
+                                                color:#dab26d;
+                                            }
+                                    }
+                            }
                     }
                 }
             }

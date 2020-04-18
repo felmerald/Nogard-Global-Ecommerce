@@ -46,15 +46,73 @@ License URI: license.txt
 }
 
 .footer-fullwidth-con .container .row .col-sm-4:nth-child(1) p.first {
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .footer-fullwidth-con .container .row .col-sm-4:nth-child(1) p.second {
-  font-size: 32px;
+  font-size: 18px;
   margin-top: -10px;
 }
 
 .footer-fullwidth-con .container .row .col-sm-4:nth-child(1) p.second a {
   color: #ffc107 !important;
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(2) p.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-fullwidth-con .container .row .col-sm-4:nth-child(2) p.title {
+    margin-left: 32px;
+  }
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(2) .list {
+  margin-left: 32px;
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(2) .list p {
+  line-height: 0.5;
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(2) .list p a {
+  color: #5f727f;
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(2) .list p a:hover {
+  color: #dab26d;
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(2) .list:last-child {
+  margin-top: 32px;
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(3) p.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-fullwidth-con .container .row .col-sm-4:nth-child(3) p.title {
+    margin-left: 32px;
+  }
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(3) .list {
+  margin-left: 32px;
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(3) .list p {
+  line-height: 0.5;
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(3) .list p a {
+  color: #5f727f;
+}
+
+.footer-fullwidth-con .container .row .col-sm-4:nth-child(3) .list p a:hover {
+  color: #dab26d;
 }
