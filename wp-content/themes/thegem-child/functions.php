@@ -43,8 +43,14 @@ if(function_exists('acf_add_options_page')){
 		'parent_slug'	=> 'theme-general-settings',
     ));
 }
-// remove theme updates
-add_action('admin_menu','wphidenag');
-function wphidenag() {
-    remove_action( 'admin_notices', 'update_nag', 3 );
-}
+// remove theme updates & notifications
+    function remove_core_updates(){
+        global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+    }
+    add_filter('pre_site_transient_update_themes','remove_core_updates'); 
+
+    add_action('admin_menu','wphidenag');
+    function wphidenag() {
+        remove_action( 'admin_notices', 'update_nag', 3 );
+    }
+

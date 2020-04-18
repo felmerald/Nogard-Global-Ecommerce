@@ -54,6 +54,7 @@
 			if(have_rows('footer_settings','option')):
 				while(have_rows('footer_settings','option')):
 					the_row();
+						
 		?>
 					<div class="footer-fullwidth-con">
 						<div class="container">
@@ -64,7 +65,7 @@
 											the_row();
 											$footer_logo = get_sub_field('theme_logo');
 								?>
-											<div class="col-sm-4">
+											<div class="col-sm-4" <?php echo $this_animation[1].' '.$this_duration[2]; ?>>
 													<?php 
 														if(!empty($footer_logo)): 
 													?>
@@ -89,7 +90,7 @@
 										endwhile;
 									endif;
 								?>
-											<div class="col-sm-4">
+											<div class="col-sm-4" <?php echo $this_animation[1].' '.$this_duration[3]; ?> >
 												<p class="title">Find It Fast</p>
 												<div class="list">
 													<?php
@@ -117,7 +118,7 @@
 														?>
 												</div>
 											</div>
-											<div class="col-sm-4">
+											<div class="col-sm-4" <?php echo $this_animation[1].' '.$this_duration[4]; ?>>
 												<p class="title">Customer Care</p>
 												<div class="list">
 													<?php

@@ -43,6 +43,20 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/aos.css"/>
 	<?php wp_head(); ?>
+	<style>
+		.wpsisac-slick-slider .slick-dots li.slick-active button {
+			background: #dab26d !important;
+		}
+		.wpsisac-slick-slider .slick-dots li button {
+			background: #fff !important;
+			margin: 0px !important;
+			padding: 0px !important;
+			border: unset !important;
+			border-radius: 50% !important;
+			width: 13px !important;
+			height: 13px !important;
+		}
+	</style>
 </head>
 
 <?php
@@ -153,3 +167,6 @@
 	<?php endif; ?>
 
 	<div id="main" class="site-main">
+
+	<!-- aos animation -->
+
