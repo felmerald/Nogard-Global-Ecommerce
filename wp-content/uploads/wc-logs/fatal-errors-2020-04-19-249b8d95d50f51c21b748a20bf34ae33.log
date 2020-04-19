@@ -1,0 +1,6 @@
+2020-04-19T04:53:00+00:00 CRITICAL syntax error, unexpected '!' in C:\xampp\htdocs\nogardglobal\wp-content\themes\thegem-child\content-homepage.php on line 48
+
+2020-04-19T14:44:32+00:00 CRITICAL Cannot redeclare thegem_menu_item_search() (previously declared in C:\xampp\htdocs\nogardglobal\wp-content\themes\thegem-child\functions.php:58) in C:\xampp\htdocs\nogardglobal\wp-content\themes\thegem\functions.php on line 2580
+
+2020-04-19T14:44:49+00:00 CRITICAL Cannot redeclare thegem_menu_item_search() (previously declared in C:\xampp\htdocs\nogardglobal\wp-content\themes\thegem-child\functions.php:58) in C:\xampp\htdocs\nogardglobal\wp-content\themes\thegem\functions.php on line 2580
+

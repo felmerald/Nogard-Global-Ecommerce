@@ -10,6 +10,12 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, c
 License: GNU General Public License
 License URI: license.txt
 */
+.font{
+    font-family: 'Montserrat';
+}
+#page{
+    background-color: #ffffff !important;
+}
 body[data-aos-duration="7000"] [data-aos],
 [data-aos][data-aos][data-aos-duration="7000"] {
   transition-duration: 7000ms;
@@ -124,7 +130,8 @@ body[data-aos-duration="7000"] [data-aos],
             }
             .wpsisac-slider-short-content{
                 p{
-                    text-shadow: unset !important;  
+                    text-shadow: unset !important;
+                    @extend .font;  
                 }
                 
             }
@@ -139,4 +146,139 @@ body[data-aos-duration="7000"] [data-aos],
     .slick-prev{
         display: none !important;
     }
+}
+// for title design to be extend
+.title-group{
+    .info{
+        font-size: 21px;
+        font-weight: 100;
+        text-align: center;
+        margin-top: -70px;
+        padding-bottom: 50px;
+    }
+    h1{
+        margin:100px auto;
+        font-size: 40px;
+        text-align: center;
+        max-width: 600px;
+        position: relative;
+
+        &:before{
+            content:"";
+            display: block;
+            width:120px;
+            height: 2px;
+            background: #eaeaea;
+            position: absolute;
+            left: -100px;
+            top:50%;
+        }
+        &:after{
+            content:"";
+            display: block;
+            width:120px;
+            height: 2px;
+            background: #eaeaea;
+            position: absolute;
+            right: -100px;
+            top:50%;
+        }
+    }
+}
+// end
+.h-section1{
+    .container{
+        .row{
+            @extend .title-group;
+
+            .product-container{
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover !important;
+                height: 400px;
+                width:100%;
+                &:hover > .product-overlay{
+                    background-color: #dab26d;
+                    > div{
+                        color:white;
+                    }
+                }
+
+                    .product-overlay{
+                        background-color: #ffffffcc;
+                        padding: 15px;
+                        position: absolute;
+                        bottom: 15%;
+                        width: 90%;
+                        @media only screen and  (max-width:767px){
+                            width:95%
+                        }
+                        cursor: pointer;
+                        text-align: center;
+                            div{
+                                
+                                text-align: center;
+                                color: #3c3950;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                @extend .font;
+                            }
+                    }
+            }
+            .col-sm-4{
+                padding-bottom: 32px;
+            }
+        }
+        .row:nth-child(2){
+            padding-bottom: 32px;
+        }  
+    }
+}
+.h-section2{
+    .column{
+        float: left;
+        width: 33.33%;
+        padding: 50px 15px;
+        height: 400px;
+        text-align: center;
+        @media only screen and (max-width:767px){
+            width: 100%;
+        }
+        text-align: center;
+        div{
+            margin-top: 32px;
+            @media only screen and (min-width:768px) and (max-width:1076px){
+                margin-top:5px;
+            }
+            
+            color:#fff;
+            h2{
+                color:#fff;
+                font-size: 32px;
+            }
+            p{
+                @extend .font;
+                font-size: 21px;
+                margin-top: -20px;
+            }
+        }
+    }
+    .column:nth-child(1),.column:nth-child(3){
+        background-color: #dab26d;
+    }
+    .column:nth-child(2){
+        background-color: #e6c68e;
+    }
+}
+.h-section2:after{
+   content:"";
+   display: table;
+   clear: both;
+}
+.page-title-block{
+    background-color: #e6c68e !important;
+}
+.page-content.content-none .searchform .searchform-submit .gem-button{
+    background-color: #dab26d !important;
 }
