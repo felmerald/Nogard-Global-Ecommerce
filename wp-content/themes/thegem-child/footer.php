@@ -54,6 +54,7 @@
 			if(have_rows('footer_settings','option')):
 				while(have_rows('footer_settings','option')):
 					the_row();
+						
 		?>
 					<div class="footer-fullwidth-con">
 						<div class="container">
@@ -64,31 +65,74 @@
 											the_row();
 											$footer_logo = get_sub_field('theme_logo');
 								?>
-											<div class="col-sm-4">
-												<?php 
-													if(!empty($footer_logo)): 
-												?>
-													<img src="<?php echo esc_url($footer_logo['url']); ?>" alt="NogardGlobal"/>
-												<?php
-													endif;
-													if(!empty(get_sub_field('telephone_number'))):
-												?>
-														<p class="first">Got Questions? Call Us 24/7!</p>
-														<p class="second"><a href="tel:<?php echo get_sub_field('telephone_number'); ?>"><?php echo get_sub_field('telephone_number'); ?></a></p>
-												<?php 
-													endif;
-												?>
+											<div class="col-sm-4" <?php echo $this_animation[1].' '.$this_duration[2]; ?>>
+													<?php 
+														if(!empty($footer_logo)): 
+													?>
+														<img src="<?php echo esc_url($footer_logo['url']); ?>" alt="NogardGlobal"/>
+													<?php
+														endif;
+															if(!empty(get_sub_field('telephone_number'))):
+													?>
+															<p class="first">Got Questions? Call Us 24/7!</p>
+															<p class="second"><a href="tel:<?php echo get_sub_field('telephone_number'); ?>"><i class="fas fa-phone-alt"></i> <?php echo get_sub_field('telephone_number'); ?></a></p>
+															
+													<?php 
+														endif;
+															if(!empty(get_sub_field('footer_address'))):
+													?>
+															<p class="third"><i class="fas fa-map-marker-alt"></i> <?php echo get_sub_field('footer_address'); ?></p>
+													<?php
+														endif;
+													?>
 											</div>
 								<?php 
 										endwhile;
 									endif;
 								?>
-								<div class="col-sm-4">
-
-								</div>
-								<div class="col-sm-4">
-
-								</div>
+											<div class="col-sm-4" <?php echo $this_animation[1].' '.$this_duration[3]; ?> >
+												<p class="title">Find It Fast</p>
+												<div class="list">
+													<?php
+														if(have_rows('social_media_menu')):
+															while(have_rows('social_media_menu')):
+																the_row();
+													?>
+																<p><a href="<?php echo esc_url(get_sub_field('social_page_url')); ?>"><?php echo get_sub_field('footer_anchor_name'); ?></a></p>
+													<?php
+															endwhile;
+														endif;
+													?>
+																
+												</div>
+												<div class="list">
+														<?php
+															if(have_rows('website_footer_menu')):
+																while(have_rows('website_footer_menu')):
+																	the_row();
+														?>
+																		<p><a href="<?php echo esc_url(get_sub_field('footer_page_url')); ?>"><?php echo get_sub_field('footer_page_anchor_name'); ?></a></p>
+														<?php
+																endwhile;
+															endif;
+														?>
+												</div>
+											</div>
+											<div class="col-sm-4" <?php echo $this_animation[1].' '.$this_duration[4]; ?>>
+												<p class="title">Customer Care</p>
+												<div class="list">
+													<?php
+														if(have_rows('customer_care_area')):
+															while(have_rows('customer_care_area')):
+																the_row();
+													?>
+																	<p><a href="<?php esc_url(get_sub_field('aca_url')); ?>"><?php echo get_sub_field('aca_anchor_name') ?></a></p>
+													<?php
+															endwhile;
+														endif;
+													?>
+												</div>		
+											</div>
 							</div>
 						</div>
 					</div>
@@ -143,7 +187,12 @@
 	<?php if(thegem_get_option('header_layout') == 'perspective') : ?>
 		</div><!-- #perspective -->
 	<?php endif; ?>
-
+	
 	<?php wp_footer(); ?>
+	<script src="https://kit.fontawesome.com/22d2c88b47.js" crossorigin="anonymous"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/aos.js"></script>
+	<script type="text/javascript">
+	AOS.init();
+	</script>
 </body>
 </html>

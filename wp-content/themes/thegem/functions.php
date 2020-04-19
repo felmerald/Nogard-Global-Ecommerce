@@ -2572,39 +2572,39 @@ add_filter( 'avatar_defaults', 'thegem_default_avatar' );
 
 
 /* ADDITIONL MENU ITEMS */
-function thegem_menu_item_search($items, $args){
-	if($args->theme_location == 'primary' && thegem_get_option('header_layout') !== 'overlay' && !thegem_get_option('hide_search_icon')) {
-		$items .= '<li class="menu-item menu-item-search"><a href="#"></a><div class="minisearch"><form role="search" id="searchform" class="sf" action="'. esc_url( home_url( '/' ) ) .'" method="GET"><input id="searchform-input" class="sf-input" type="text" placeholder="'.esc_html__('Search...', 'thegem').'" name="s"><span class="sf-submit-icon"></span><input id="searchform-submit" class="sf-submit" type="submit" value=""></form></div></li>';
-	}
-	return $items;
-}
-add_filter('wp_nav_menu_items', 'thegem_menu_item_search', 10, 2);
+// function thegem_menu_item_search($items, $args){
+// 	if($args->theme_location == 'primary' && thegem_get_option('header_layout') !== 'overlay' && !thegem_get_option('hide_search_icon')) {
+// 		$items .= '<li class="menu-item menu-item-search"><a href="#"></a><div class="minisearch"><form role="search" id="searchform" class="sf" action="'. esc_url( home_url( '/' ) ) .'" method="GET"><input id="searchform-input" class="sf-input" type="text" placeholder="'.esc_html__('Search...', 'thegem').'" name="s"><span class="sf-submit-icon"></span><input id="searchform-submit" class="sf-submit" type="submit" value=""></form></div></li>';
+// 	}
+// 	return $items;
+// }
+// add_filter('wp_nav_menu_items', 'thegem_menu_item_search', 10, 2);
 
-function thegem_menu_item_hamburger_widget($items, $args){
-	if($args->theme_location == 'primary' && thegem_get_option('header_layout') == 'fullwidth_hamburger'){
+// function thegem_menu_item_hamburger_widget($items, $args){
+// 	if($args->theme_location == 'primary' && thegem_get_option('header_layout') == 'fullwidth_hamburger'){
 
-		ob_start();
-		thegem_print_socials('rounded');
-		$socials = ob_get_clean();
+// 		ob_start();
+// 		thegem_print_socials('rounded');
+// 		$socials = ob_get_clean();
 
-		$items .= '<li class="menu-item menu-item-widgets"><div class="vertical-minisearch"><form role="search" id="searchform" class="sf" action="'. esc_url( home_url( '/' ) ) .'" method="GET"><input id="searchform-input" class="sf-input" type="text" placeholder="'.esc_html__('Search...', 'thegem').'" name="s"><span class="sf-submit-icon"></span><input id="searchform-submit" class="sf-submit" type="submit" value=""></form></div><div class="menu-item-socials socials-colored">'. $socials .'</div></li>';
-	}
-	return $items;
-}
-add_filter('wp_nav_menu_items', 'thegem_menu_item_hamburger_widget', 100, 2);
+// 		$items .= '<li class="menu-item menu-item-widgets"><div class="vertical-minisearch"><form role="search" id="searchform" class="sf" action="'. esc_url( home_url( '/' ) ) .'" method="GET"><input id="searchform-input" class="sf-input" type="text" placeholder="'.esc_html__('Search...', 'thegem').'" name="s"><span class="sf-submit-icon"></span><input id="searchform-submit" class="sf-submit" type="submit" value=""></form></div><div class="menu-item-socials socials-colored">'. $socials .'</div></li>';
+// 	}
+// 	return $items;
+// }
+// add_filter('wp_nav_menu_items', 'thegem_menu_item_hamburger_widget', 100, 2);
 
-function thegem_mobile_menu_item_widget($items, $args){
-	if($args->theme_location == 'primary' && in_array(thegem_get_option('mobile_menu_layout'), array('slide-horizontal', 'slide-vertical'))){
+// function thegem_mobile_menu_item_widget($items, $args){
+// 	if($args->theme_location == 'primary' && in_array(thegem_get_option('mobile_menu_layout'), array('slide-horizontal', 'slide-vertical'))){
 
-		ob_start();
-		thegem_print_socials();
-		$socials = ob_get_clean();
+// 		ob_start();
+// 		thegem_print_socials();
+// 		$socials = ob_get_clean();
 
-		$items .= '<li class="menu-item menu-item-widgets mobile-only"><div class="menu-item-socials">'. $socials .'</div></li>';
-	}
-	return $items;
-}
-add_filter('wp_nav_menu_items', 'thegem_mobile_menu_item_widget', 100, 2);
+// 		$items .= '<li class="menu-item menu-item-widgets mobile-only"><div class="menu-item-socials">'. $socials .'</div></li>';
+// 	}
+// 	return $items;
+// }
+// add_filter('wp_nav_menu_items', 'thegem_mobile_menu_item_widget', 100, 2);
 
 /* PAGE SCROLLER */
 

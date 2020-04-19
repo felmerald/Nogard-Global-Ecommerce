@@ -43,3 +43,53 @@ if(function_exists('acf_add_options_page')){
 		'parent_slug'	=> 'theme-general-settings',
     ));
 }
+// remove theme updates & notifications
+    function remove_core_updates(){
+        global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+    }
+    add_filter('pre_site_transient_update_themes','remove_core_updates'); 
+
+    add_action('admin_menu','wphidenag');
+    function wphidenag() {
+        remove_action( 'admin_notices', 'update_nag', 3 );
+    }
+
+    // replace default search to advance woo search
+    function thegem_menu_item_search($items, $args){
+        if($args->theme_location == 'primary' && thegem_get_option('header_layout') !== 'overlay' && !thegem_get_option('hide_search_icon')) {
+            $items .= '<li class="menu-item menu-item-search"><a href="#"></a>
+            <div class="minisearch">
+            "'.do_shortcode("[aws_search_form]").'"
+            </div>
+            </li>';
+        }
+        return $items;
+    }
+    add_filter('wp_nav_menu_items', 'thegem_menu_item_search', 10, 2);
+
+    function thegem_menu_item_hamburger_widget($items, $args){
+        if($args->theme_location == 'primary' && thegem_get_option('header_layout') == 'fullwidth_hamburger'){
+
+            ob_start();
+            thegem_print_socials('rounded');
+            $socials = ob_get_clean();
+
+            $items .= '<li class="menu-item menu-item-widgets">
+            <div class="vertical-minisearch">
+            "'.do_shortcode("[aws_search_form]").'"
+            </div>
+            <div class="menu-item-socials socials-colored">'. $socials .'</div>
+            </li>';
+        }
+        return $items;
+    }
+    add_filter('wp_nav_menu_items', 'thegem_menu_item_hamburger_widget', 100, 2);
+    if(!function_exists('thegem_serch_form_vertical_header')) {
+        function thegem_serch_form_vertical_header($form)
+        {
+            return '<div class="vertical-minisearch">
+            "'.do_shortcode("[aws_search_form]").'"
+            </div>';
+        }
+    }
+
