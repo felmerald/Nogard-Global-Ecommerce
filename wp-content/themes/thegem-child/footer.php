@@ -126,7 +126,7 @@
 															while(have_rows('customer_care_area')):
 																the_row();
 													?>
-																	<p><a href="<?php esc_url(get_sub_field('aca_url')); ?>"><?php echo get_sub_field('aca_anchor_name') ?></a></p>
+																	<p><a href="<?php echo esc_url(get_sub_field('aca_url')); ?>"><?php echo get_sub_field('aca_anchor_name') ?></a></p>
 													<?php
 															endwhile;
 														endif;
