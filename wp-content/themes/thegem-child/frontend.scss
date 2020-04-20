@@ -10,6 +10,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, c
 License: GNU General Public License
 License URI: license.txt
 */
+
 .font{
     font-family: 'Montserrat';
 }
@@ -162,6 +163,9 @@ body[data-aos-duration="7000"] [data-aos],
         text-align: center;
         max-width: 600px;
         position: relative;
+        @media only screen and (max-width:767px){
+            line-height: 1;
+        }
 
         &:before{
             content:"";
@@ -276,9 +280,211 @@ body[data-aos-duration="7000"] [data-aos],
    display: table;
    clear: both;
 }
+.wpsisac-slide-wrap .wpsisac-readmore a.wpsisac-slider-readmore{
+    @extend .font;
+    color:#fff !important;
+}
 .page-title-block{
     background-color: #e6c68e !important;
 }
 .page-content.content-none .searchform .searchform-submit .gem-button{
     background-color: #dab26d !important;
+}
+.product .onsale{
+    background-color: #dab26d !important;
+}
+.products .product .product-info .product-rating .empty-rating:before {
+    border-color: #dab26d !important;
+}
+.products .product-info .price .amount {
+    color: #dab26d !important;
+}
+#primary-navigation #primary-menu > li.menu-item-cart > a .minicart-item-count{
+    background-color: #dc3545 !important;
+}
+body #primary-menu.no-responsive > li.menu-item-cart > .minicart ul li.sale .minicart-image:before{
+    background-color: #dc3545 !important;
+}
+#primary-menu.no-responsive > li.menu-item-cart > .minicart .buttons .mini-cart-view-cart .gem-button, .hamburger-minicart > .minicart .buttons .mini-cart-view-cart .gem-button{
+  
+    background-color: #dab26d !important;
+    border-color: #dab26d !important;
+    &:hover{
+        background-color: unset;
+        color:white;
+    }
+}
+#primary-menu.no-responsive > li.menu-item-cart > .minicart .buttons .mini-cart-view-cart .gem-button:hover, .hamburger-minicart > .minicart .buttons .mini-cart-view-cart .gem-button:hover{
+    background-color: unset !important;
+    color:#dab26d !important; 
+}
+body #primary-menu.no-responsive > li.menu-item-cart > .minicart ul li a:hover{
+    color:#dab26d !important; 
+}
+.woocommerce-before-cart .cart-short-info .items-count{
+    color:#dc3545 !important;
+}
+.shop_table .product-name .product-title, .shop_table .product-name .product-title a {
+    color: #393d50 !important;
+}
+.gem-button.gem-button-style-outline, body .woocommerce .woocommerce-cart-form .actions .submit-buttons .update-cart button:hover, body .checkout-navigation-buttons .checkout-place-order button:hover, body .checkout-navigation-buttons .checkout-place-order button {
+    border-color: #dab26d !important;
+    color:#dab26d !important;
+    &:hover{
+        background-color: #dab26d !important;
+        color:white !important;
+    }
+}
+body .woocommerce .woocommerce-cart-form .actions .submit-buttons .update-cart button{
+    border-color: #dab26d !important;
+    background-color: #dab26d !important;
+}
+.woocommerce .shop_table thead tr th, .product-info .product-info-header > div {
+    background: #b38e4e !important;
+    border-color: #dab26d !important;
+}
+.gem-button.gem-button-style-outline:hover, .comment-form .form-submit .gem-button.submit, .portfolio-item:hover .caption-bottom-line .project-button .gem-button, #colophon #mc4wp_submit:hover, #colophon.wpcf7 .wpcf7-form .contact-form-footer .wpcf7-submit:hover, body #colophon .tagcloud a:hover, .portfolio-item-page-bottom .project-button .gem-button, body .woocommerce .woocommerce-cart-form .actions .submit-buttons .update-cart button, body .checkout-navigation-buttons .checkout-place-order button {
+    background-color: #dab26d !important;
+    color:#fff !important;
+    &:hover{
+        background-color: unset !important;
+        color:#dab26d !important;
+        border-color:1px solid #dab26d !important;;
+    }
+}
+.woocommerce .woocommerce-checkout #order_review .woocommerce-checkout-payment .payment_methods .payment_box{
+    background: #b38e4e !important;
+}
+
+a:active {
+    color: #dab26d !important;
+}
+.single-product-content form.cart .gem-button {
+    background-color: #dab26d !important;
+}
+.gem-gallery .gem-gallery-thumbs-carousel-wrap .gem-gallery-item svg {
+    fill: #dab26d !important;
+}
+.gem-gallery .gem-gallery-thumbs-carousel-wrap .gem-gallery-item a:before, .gem-gallery-hover-default .active .gem-gallery-item-image:after {
+    background-color: #dab26d !important;
+}
+a, .widget_recent_comments .comment-author-link a, .widget .team-person-email a:hover:before, .gem-team-style-5 .team-person:hover .team-person-name, .portfolio.hover-vertical-sliding .overlay .links .caption .info a, .portfolio.hover-horizontal-sliding .overlay .links .caption .info a, .portfolio-set-comma, .blog-style-masonry .entry-title.title-h4 a:hover, .portfolio-item .caption .title a:hover, .version-new.news-grid .portfolio-item:hover .wrap > .caption .title a, .version-default.news-grid .portfolio-item:hover .wrap > .caption .title a, .blog-style-styled_list1 .post-title a:hover, .blog-style-styled_list2 .post-title a:hover, .blog-style-timeline .post-title a:hover, .products .product-info .product-title a:hover, .products .portfolio-item .wrap > .caption .title a:hover, .gem-basic-grid .post-title h4.entry-title a:hover, .gem-basic-grid-2 .vc_gitem-zone-c .post-title a:hover, .gem-media-grid .midia-grid-item-post-author span a:hover, .justified-style-1 .entry-title.title-h4 a:hover, .justified-style-2 .entry-title.title-h4 a:hover, .blog-style-multi-author .post-title a:hover, .reverse-link-color a:hover, a.reverse-link-color:hover, .gem-blog-slider .post-title a:hover, .socials-list.socials-colored a:hover .socials-item-icon, #footer-navigation li a:hover, .custom-footer li a:hover, body.woocommerce-cart .custom-header .breadcrumbs span a, body.woocommerce-checkout .custom-header .breadcrumbs span a, body.woocommerce-wishlist .custom-header .breadcrumbs span a, body.woocommerce-account .page-title-block .breadcrumbs span a, body #primary-menu.no-responsive > li.menu-item-cart > .minicart ul li a:hover, body .hamburger-minicart > .minicart ul li a:hover, .version-new.news-grid .portfolio-item .wrap > .caption .title a:hover, .version-default.news-grid.hover-default-vertical-sliding .portfolio-item .image .links .caption .info a {
+    color: #3c3950 !important;
+}
+.gem-gallery .gem-gallery-preview-carousel-wrap .gem-gallery-item a:before{
+    background-color: #e8d2ac96 !important;
+}
+
+.h-sale-product{
+    .container{
+        .row{
+            @extend .title-group
+        }
+        .row:nth-child(2){
+            padding-top:32px;
+            padding-bottom: 32px;
+        }
+        .row:nth-child(3){
+            padding-top:32px;
+            padding-bottom: 32px;
+            .box-yellow{
+                background-color: #fec53d;
+                outline: 5px solid #fff;
+                outline-offset: -26px;
+                .column{
+                    float: left;
+                    width:50%;
+                    padding:15px;
+                    h2{
+                        font-size: 62px;
+                        color: #fff;
+                        font-weight: bold;
+                        margin-left: 50px;
+                        letter-spacing: 15px;
+                    }
+                    p{
+                        @extend .font;
+                        color: #3c3950;
+                        font-size: 21px;
+                        position: absolute;
+                        top: 40%;
+                        padding-right: 50px;
+                            @media only screen and (max-width:1199px){
+                                top:50%;
+                            }
+                            @media only screen and (max-width:831px){
+                                top:47%;
+                            }
+                            @media only screen and (max-width:767px){
+                                position: unset;
+                                top: unset;
+                                padding-right: unset;
+                            }
+                    }
+                    @media only screen and (max-width:767px){
+                        width:100%;
+                        h2,p{
+                            text-align: center;
+                        }
+                    }
+                   
+                }
+                .column:nth-child(2){
+                    @media only screen and (max-width:767px){
+                        margin-top: -50px;
+                        padding-bottom: 50px;
+                        padding-right: 100px;
+                        padding-left: 100px;
+                    }
+                }
+            }
+            .box-yellow:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+    }
+}
+.payment-section{
+    margin-top: 100px;
+    .container{
+        .row{
+            .panel-box{
+                border: 1px solid #dfe5e8;
+                background-color: #ffffff;
+                width:100%;
+                height: auto;
+                padding:20px;
+                    h4{
+                        i{
+                            float: right;
+                        }
+                    }
+                    .info{
+                        @extend .font;
+                    }
+                    .atm{
+                        .column{
+                            float: left;
+                            width:10%;
+                            padding:5px;
+                            img{
+                                width: 100%;
+                            }
+                           
+                        }
+                    }
+                    .atm:after{
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+                .checklist{
+                    @extend .font;
+                }
+            }
+            padding-bottom: 50px;
+        }
+    }
 }
