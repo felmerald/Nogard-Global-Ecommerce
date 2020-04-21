@@ -92,8 +92,19 @@ if(function_exists('acf_add_options_page')){
             </div>';
         }
     }
-
+    // add responsive-style.css
     function responsive_stylesheet(){
         wp_enqueue_style('responsive-style',get_stylesheet_directory_uri().'/css/responsive-style.css', false, '1.0', 'all');
     }
     add_action( 'wp_enqueue_scripts', 'responsive_stylesheet' );
+
+    // disabled update for specific plugin
+    function disable_plugin_updates( $value ) {
+        if ( isset($value) && is_object($value) ) {
+          if ( isset( $value->response['advanced-custom-fields-pro/acf.php'] ) ) {
+            unset( $value->response['advanced-custom-fields-pro/acf.php'] );
+          }
+        }
+        return $value;
+      }
+    add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );
