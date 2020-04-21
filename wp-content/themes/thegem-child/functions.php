@@ -93,3 +93,7 @@ if(function_exists('acf_add_options_page')){
         }
     }
 
+    function responsive_stylesheet(){
+        wp_enqueue_style('responsive-style',get_stylesheet_directory_uri().'/css/responsive-style.css', false, '1.0', 'all');
+    }
+    add_action( 'wp_enqueue_scripts', 'responsive_stylesheet' );

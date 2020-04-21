@@ -547,3 +547,8 @@ a, .widget_recent_comments .comment-author-link a, .widget .team-person-email a:
   display: table;
   clear: both;
 }
+
+.header-style-3 #primary-menu.no-responsive > li.menu-item-active > a {
+  border: 2px solid #dab26d !important;
+  color: #dab26d !important;
+}

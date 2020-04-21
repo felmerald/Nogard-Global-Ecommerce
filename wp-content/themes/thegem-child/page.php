@@ -10,6 +10,10 @@ get_header(); ?>
 		// locate the content-homepage.php
 		get_template_part('content','homepage');
 		
+	}else if(is_page(167)){
+		get_template_part('content','support');
+	}else if(is_page(169)){
+		get_template_part('content','about');
 	}else{
 		while ( have_posts() ) : the_post();
 			get_template_part( 'content', 'page' );

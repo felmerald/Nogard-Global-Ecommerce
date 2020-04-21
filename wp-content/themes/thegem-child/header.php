@@ -43,6 +43,8 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/aos.css"/>
 	<?php wp_head(); ?>
+	
+
 	<style>
 		.wpsisac-slick-slider .slick-dots li.slick-active button {
 			background: #dab26d !important;
