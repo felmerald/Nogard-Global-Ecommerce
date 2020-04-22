@@ -14,6 +14,10 @@ get_header(); ?>
 		get_template_part('content','support');
 	}else if(is_page(169)){
 		get_template_part('content','about');
+	}else if(is_page(194)){
+		get_template_part('content','bestselling');
+	}else if(is_page(191)){
+		get_template_part('content','newarrival');
 	}else{
 		while ( have_posts() ) : the_post();
 			get_template_part( 'content', 'page' );

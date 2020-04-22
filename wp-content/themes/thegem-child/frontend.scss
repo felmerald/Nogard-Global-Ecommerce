@@ -488,7 +488,66 @@ a, .widget_recent_comments .comment-author-link a, .widget .team-person-email a:
         }
     }
 }
-.header-style-3 #primary-menu.no-responsive > li.menu-item-active > a,{
+.header-style-3 #primary-menu.no-responsive > li.menu-item-active > a{
     border: 2px solid #dab26d !important;
     color: #dab26d !important;
+}
+.best-selling{
+    .container{
+        .row{
+            @extend .title-group;
+        }
+    }
+}
+#post-135{
+    .entry-content{
+        .wp-block-preformatted{
+            .woocommerce{
+                p{
+                    @extend .font ;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.footer-our-brands{
+    background-color: #eaeaea;
+    padding-bottom: 32px;
+    .container{
+        .row{
+            @extend .title-group;
+            .title-group{
+                h1{
+                    &:before{
+                        background-color: white;
+                    }
+                    &:after{
+                        background-color: white;
+                    }
+
+                }
+                
+            }
+        }
+    }
+    .wpsisac-slick-carousal{
+        .slick-dots{
+            li button{
+                border: 1px solid #dab26d !important;
+            }
+            li.slick-active button{
+                background: #dab26d !important;
+            }
+        }
+    }
+    .wpsisac-slick-carousal.design-6 .slick-next {
+        display: none !important;
+    }
+    .wpsisac-slick-carousal.design-6 .slick-prev {
+        display: none !important;
+    }
+    .wpsisac-clearfix {
+        margin-top: -70px;
+    }
 }

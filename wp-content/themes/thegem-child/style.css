@@ -10,7 +10,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, c
 License: GNU General Public License
 License URI: license.txt
 */
-.font, .wpsisac-slick-slider.design-3 .wpsisac-image-slide .wpsisac-slide-wrap .wpsisac-slider-short-content p, .h-section1 .container .row .product-container .product-overlay div, .h-section2 .column div p, .wpsisac-slide-wrap .wpsisac-readmore a.wpsisac-slider-readmore, .h-sale-product .container .row:nth-child(3) .box-yellow .column p, .payment-section .container .row .panel-box .info, .payment-section .container .row .panel-box .checklist {
+.font, .wpsisac-slick-slider.design-3 .wpsisac-image-slide .wpsisac-slide-wrap .wpsisac-slider-short-content p, .h-section1 .container .row .product-container .product-overlay div, .h-section2 .column div p, .wpsisac-slide-wrap .wpsisac-readmore a.wpsisac-slider-readmore, .h-sale-product .container .row:nth-child(3) .box-yellow .column p, .payment-section .container .row .panel-box .info, .payment-section .container .row .panel-box .checklist, #post-135 .entry-content .wp-block-preformatted .woocommerce p {
   font-family: 'Montserrat';
 }
 
@@ -170,7 +170,7 @@ body[data-aos-duration="7000"] [data-aos],
   display: none !important;
 }
 
-.title-group .info, .h-section1 .container .row .info, .h-sale-product .container .row .info {
+.title-group .info, .h-section1 .container .row .info, .h-sale-product .container .row .info, .best-selling .container .row .info, .footer-our-brands .container .row .info {
   font-size: 21px;
   font-weight: 100;
   text-align: center;
@@ -178,7 +178,7 @@ body[data-aos-duration="7000"] [data-aos],
   padding-bottom: 50px;
 }
 
-.title-group h1, .h-section1 .container .row h1, .h-sale-product .container .row h1 {
+.title-group h1, .h-section1 .container .row h1, .h-sale-product .container .row h1, .best-selling .container .row h1, .footer-our-brands .container .row h1 {
   margin: 100px auto;
   font-size: 40px;
   text-align: center;
@@ -187,12 +187,12 @@ body[data-aos-duration="7000"] [data-aos],
 }
 
 @media only screen and (max-width: 767px) {
-  .title-group h1, .h-section1 .container .row h1, .h-sale-product .container .row h1 {
+  .title-group h1, .h-section1 .container .row h1, .h-sale-product .container .row h1, .best-selling .container .row h1, .footer-our-brands .container .row h1 {
     line-height: 1;
   }
 }
 
-.title-group h1:before, .h-section1 .container .row h1:before, .h-sale-product .container .row h1:before {
+.title-group h1:before, .h-section1 .container .row h1:before, .h-sale-product .container .row h1:before, .best-selling .container .row h1:before, .footer-our-brands .container .row h1:before {
   content: "";
   display: block;
   width: 120px;
@@ -203,7 +203,7 @@ body[data-aos-duration="7000"] [data-aos],
   top: 50%;
 }
 
-.title-group h1:after, .h-section1 .container .row h1:after, .h-sale-product .container .row h1:after {
+.title-group h1:after, .h-section1 .container .row h1:after, .h-sale-product .container .row h1:after, .best-selling .container .row h1:after, .footer-our-brands .container .row h1:after {
   content: "";
   display: block;
   width: 120px;
@@ -551,4 +551,41 @@ a, .widget_recent_comments .comment-author-link a, .widget .team-person-email a:
 .header-style-3 #primary-menu.no-responsive > li.menu-item-active > a {
   border: 2px solid #dab26d !important;
   color: #dab26d !important;
+}
+
+#post-135 .entry-content .wp-block-preformatted .woocommerce p {
+  font-size: 16px;
+}
+
+.footer-our-brands {
+  background-color: #eaeaea;
+  padding-bottom: 32px;
+}
+
+.footer-our-brands .container .row .title-group h1:before, .footer-our-brands .container .row .row h1:before {
+  background-color: white;
+}
+
+.footer-our-brands .container .row .title-group h1:after, .footer-our-brands .container .row .row h1:after {
+  background-color: white;
+}
+
+.footer-our-brands .wpsisac-slick-carousal .slick-dots li button {
+  border: 1px solid #dab26d !important;
+}
+
+.footer-our-brands .wpsisac-slick-carousal .slick-dots li.slick-active button {
+  background: #dab26d !important;
+}
+
+.footer-our-brands .wpsisac-slick-carousal.design-6 .slick-next {
+  display: none !important;
+}
+
+.footer-our-brands .wpsisac-slick-carousal.design-6 .slick-prev {
+  display: none !important;
+}
+
+.footer-our-brands .wpsisac-clearfix {
+  margin-top: -70px;
 }
