@@ -1,17 +1,50 @@
 
 
+.mt-150 {
+	margin-top: 150px;
+}
+
 .c-section {
 	.container {
 		.row {
 			.contact-header > {
 				h1 {
-					font-size: 150px;
+					font-size: 200px;
 					margin: 200px 0 100px 0;
+					text-transform: capitalize;
 				}
+			}
+		}
+	}
+
+	.container-full {
+	    margin: 40px 0 100px 0;
+		.row {
+			div {
+				float: left;
+			}
+			> div:first-child {
+				width: 562px;
+				img {
+					position: relative;
+					left: -240px;
+					margin-top: 10px;
+				}
+			}
+			> div:last-child {
+				width: 700px;
 				p {
-					font-size: 40px;
+					font-family: 'Montserrat';
+					font-size: 30px;
 					color: #3c3950;
+				    margin-bottom: 0;
+				    line-height: 40px;
 				}
+			}
+			> div::after {
+				display: block;
+				content: " ";
+				clear: both;
 			}
 		}
 	}
@@ -27,13 +60,41 @@
 	.container {
 		.row.contact-info {
 			> h2 {
-				font-size: 60px;
+				font-size: 80px;
 				margin-bottom: 50px;
+				text-transform: capitalize;
 			}
-			> p {
-			    width: 800px;
-				font-size: 24px;
-				color: #3c3950;
+		}
+	}
+
+	.container-full-2 {
+	    margin: 40px 0 70px 0;
+		.row {
+			div {
+				float: left;
+			}
+			> div:first-child {
+				width: 375px;
+				img {
+					position: relative;
+					left: -420px;
+					margin-top: 10px;
+				}
+			}
+			> div:last-child {
+				width: 985px;
+				p {
+					font-family: 'Montserrat';
+					font-size: 24px;
+					color: #3c3950;
+				    margin-bottom: 0;
+				    line-height: 40px;
+				}
+			}
+			> div::after {
+				display: block;
+				content: " ";
+				clear: both;
 			}
 		}
 	}
@@ -65,18 +126,14 @@
 
 	.container {
 		.row.contact-form {
-		    margin-top: 150px;
+		    // margin-top: 150px;
 			> h2 {
-				font-size: 60px;
+				font-size: 80px;
 				margin-bottom: 50px;
-			}
-			> p {
-			    width: 800px;
-				font-size: 24px;
-				color: #3c3950;
+				text-transform: capitalize;
 			}
 			> div {
-				margin-top: 100px;
+				margin-top: 50px;
 				form {
 					.col-sm-4 > span > input {
 					    border-color: #3c3950;
@@ -91,17 +148,49 @@
 						padding-left: 21px;
 						> input {
 							width: 200px;
-							background-color: #3c3950;
+							background-color: #dab26d;
 							margin-top: 50px;
-							border: 1px solid #3c3950;
+							border: 1px solid #dab26d;
 						}
 
 						> input:hover {
 							background-color: rgb(255, 255, 255);
-							color: #3c3950;
+							color: #dab26d;
 						}
 					}
 				}
+			}
+		}
+	}
+
+	.container-full-3 {
+	    margin: 40px 0 70px 0;
+		.row {
+			div {
+				float: left;
+			}
+			> div:first-child {
+				width: 375px;
+				img {
+					position: relative;
+					left: -420px;
+					margin-top: 10px;
+				}
+			}
+			> div:last-child {
+				width: 985px;
+				p {
+					font-family: 'Montserrat';
+					font-size: 24px;
+					color: #3c3950;
+				    margin-bottom: 0;
+				    line-height: 40px;
+				}
+			}
+			> div::after {
+				display: block;
+				content: " ";
+				clear: both;
 			}
 		}
 	}

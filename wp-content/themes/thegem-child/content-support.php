@@ -14,9 +14,19 @@
                         <div class="row" <?php echo $this_animation[0]; ?>>
                             <div class="contact-header">
                                 <h1><?php echo get_sub_field('psf_section_name'); ?></h1>
-                                <p><?php echo get_sub_field('psf_short_decription'); ?></p>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="container-full">
+						<div class="row" <?php echo $this_animation[0]; ?>>
+							<div>
+								<img src="<?php echo get_stylesheet_directory_uri().'/images/arrow-yellow.png'; ?>" />
+							</div>
+							<div>
+								<p><?php echo get_sub_field('psf_short_decription'); ?></p>
+							</div>
+						</div>
                     </div>
 
                     <div class="container-map" <?php echo $this_animation[0]; ?>>
@@ -38,8 +48,21 @@
 ?>
 						<div class="row contact-info">
 							<h2><?php echo get_sub_field('cis_section_name'); ?></h2>
-							<p><?php echo get_sub_field('cis_short_description'); ?></p>
 						</div>
+					</div>
+
+					<div class="container-full-2">
+						<div class="row">
+							<div>
+								<img src="<?php echo get_stylesheet_directory_uri().'/images/arrow-yellow.png'; ?>" />
+							</div>
+							<div>
+								<p><?php echo get_sub_field('cis_short_description'); ?></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
 						<div class="row contact-details" <?php echo $this_animation[0]; ?>>
 <?php
 							if (have_rows('cis_contact_section')) {
@@ -62,6 +85,7 @@
 							}
 ?>
 						</div>
+					</div>
 <?php            	
                     }
 ?>
@@ -69,7 +93,7 @@
     			}
         	}
 ?> 
-
+					<div class="container">
 <?php
         	if (have_rows('contact_form_7_section')) {
         		while(have_rows('contact_form_7_section')) {
@@ -80,9 +104,24 @@
                     	//disabled
                     // } else {
 ?>
-						<div class="row contact-form">
+						<div class="row contact-form mt-150">
 							<h2><?php echo get_sub_field('cfs_section_name'); ?></h2>
-							<p><?php echo get_sub_field('cfs_short_description'); ?></p>
+						</div>
+					</div>
+
+					<div class="container-full-3">
+						<div class="row">
+							<div>
+								<img src="<?php echo get_stylesheet_directory_uri().'/images/arrow-yellow.png'; ?>" />
+							</div>
+							<div>
+								<p><?php echo get_sub_field('cfs_short_description'); ?></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row contact-form">
 							<div <?php echo $this_animation[0]; ?>>
 								<?php echo do_shortcode(get_sub_field('cfs_contact_form_7_shortcode')); ?>
 							</div>
