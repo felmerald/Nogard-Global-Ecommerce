@@ -676,3 +676,12 @@ a, .widget_recent_comments .comment-author-link a, .widget .team-person-email a:
 .gem-button:hover {
   background-color: #dab26d !important;
 }
+
+body .woocommerce .woocommerce-cart-form .actions .submit-buttons .checkout-button-button .checkout-button {
+  background-color: #dab26d !important;
+  color: white !important;
+}
+
+body .woocommerce .woocommerce-cart-form .actions .submit-buttons .checkout-button-button .checkout-button:hover {
+  border-color: #dab26d !important;
+}
