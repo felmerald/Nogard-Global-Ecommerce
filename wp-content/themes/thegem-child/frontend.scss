@@ -638,3 +638,33 @@ a, .widget_recent_comments .comment-author-link a, .widget .team-person-email a:
         }
     }
 }
+#post-3{
+    h2{
+        font-size: 24px !important;
+        line-height: 1;
+    }
+    h3{
+        font-size: 16px !important;
+        line-height: 1;
+    }
+    p{
+        @extend .font;
+    }
+}
+.content-faq{
+    .container{
+        .row{
+            @extend .title-group;
+            p.title{
+                font-size: 16px;
+                font-weight: bold;
+            }
+            p{
+                @extend .font;
+            }
+        }
+    }
+}
+.gem-button:hover{
+    background-color: #dab26d !important;
+}

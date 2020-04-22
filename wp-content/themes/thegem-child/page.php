@@ -18,6 +18,12 @@ get_header(); ?>
 		get_template_part('content','bestselling');
 	}else if(is_page(191)){
 		get_template_part('content','newarrival');
+	}else if(is_page(304)){
+		get_template_part('content','faq');
+	}else if(is_page(311)){
+		get_template_part('content','termsofservices');
+	}else if(is_page(314)){
+		get_template_part('content','customerservice');
 	}else{
 		while ( have_posts() ) : the_post();
 			get_template_part( 'content', 'page' );
