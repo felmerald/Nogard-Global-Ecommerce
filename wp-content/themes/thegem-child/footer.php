@@ -49,6 +49,18 @@
 				</div>
 			</footer><!-- #colophon -->
 			<?php endif; ?>
+			
+
+			<div class="footer-our-brands">
+				<div class="container">
+					<div class="row">
+								<div class="title-group">
+                                    <h1>Our Brands</h1>
+                                </div>
+					</div>
+				</div>
+				<?php echo do_shortcode('[slick-carousel-slider  design="design-6" category="36" autoplay="true" image_fit="false" lazyload="ondemand"]'); ?>
+			</div>
 <!-- footer settings using acf -->
 		<?php
 			if(have_rows('footer_settings','option')):
