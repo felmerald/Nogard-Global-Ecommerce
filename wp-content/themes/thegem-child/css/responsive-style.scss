@@ -1,0 +1,108 @@
+
+
+.c-section {
+	.container {
+		.row {
+			.contact-header > {
+				h1 {
+					font-size: 150px;
+					margin: 200px 0 100px 0;
+				}
+				p {
+					font-size: 40px;
+					color: #3c3950;
+				}
+			}
+		}
+	}
+
+	.container-map {
+		.row {
+			iframe {
+				height: 700px !important;
+			}
+		}
+	}
+
+	.container {
+		.row.contact-info {
+			> h2 {
+				font-size: 60px;
+				margin-bottom: 50px;
+			}
+			> p {
+			    width: 800px;
+				font-size: 24px;
+				color: #3c3950;
+			}
+		}
+	}
+
+	.container {
+		.row.contact-details {
+			margin-top: 100px;
+			.col-3 {
+				width: 33.333%;
+				float: left;
+			    text-align: center;
+				p.label {
+					font-size: 18px;
+					font-weight: bold;
+					color: #3c3950;
+				}
+				p.info {
+					font-size: 16px;
+					color: #ababab;
+				}
+			}
+			.col-3::after {
+				display: block;
+				content: " ";
+				clear: both;
+			}
+		}
+	}
+
+	.container {
+		.row.contact-form {
+		    margin-top: 150px;
+			> h2 {
+				font-size: 60px;
+				margin-bottom: 50px;
+			}
+			> p {
+			    width: 800px;
+				font-size: 24px;
+				color: #3c3950;
+			}
+			> div {
+				margin-top: 100px;
+				form {
+					.col-sm-4 > span > input {
+					    border-color: #3c3950;
+					}
+					.col-sm-12 {
+					    margin-top: 50px;
+						> span > textarea {
+							border-color: #3c3950;
+						}
+					}
+					p {
+						padding-left: 21px;
+						> input {
+							width: 200px;
+							background-color: #3c3950;
+							margin-top: 50px;
+							border: 1px solid #3c3950;
+						}
+
+						> input:hover {
+							background-color: rgb(255, 255, 255);
+							color: #3c3950;
+						}
+					}
+				}
+			}
+		}
+	}
+}
