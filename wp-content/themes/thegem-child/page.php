@@ -24,6 +24,8 @@ get_header(); ?>
 		get_template_part('content','termsofservices');
 	}else if(is_page(314)){
 		get_template_part('content','customerservice');
+	}else if(is_page(135)){
+		get_template_part('content','ordertracking');
 	}else{
 		while ( have_posts() ) : the_post();
 			get_template_part( 'content', 'page' );
