@@ -10,7 +10,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, c
 License: GNU General Public License
 License URI: license.txt
 */
-.font, .wpsisac-slick-slider.design-3 .wpsisac-image-slide .wpsisac-slide-wrap .wpsisac-slider-short-content p, .h-section1 .container .row .product-container .product-overlay div, .h-section2 .column div p, .wpsisac-slide-wrap .wpsisac-readmore a.wpsisac-slider-readmore, .h-sale-product .container .row:nth-child(3) .box-yellow .column p, .payment-section .container .row .panel-box .info, .payment-section .container .row .panel-box .checklist, #post-135 .entry-content .wp-block-preformatted .woocommerce p, .about-s1 .container .row .col-sm-8 p, .about-s2 .container .row .col-sm-8 .history-box p, .about-s2 .container .row .col-sm-8 .history-box label, .about-s3 .container .row .col-sm-3 p, #post-3 p, .content-faq .container .row p {
+.font, .wpsisac-slick-slider.design-3 .wpsisac-image-slide .wpsisac-slide-wrap .wpsisac-slider-short-content p, .h-section1 .container .row .product-container .product-overlay div, .h-section2 .column div p, .wpsisac-slide-wrap .wpsisac-readmore a.wpsisac-slider-readmore, .h-sale-product .container .row:nth-child(3) .box-yellow .column p, .payment-section .container .row .panel-box .info, .payment-section .container .row .panel-box .checklist, .about-s1 .container .row .col-sm-8 p, .about-s2 .container .row .col-sm-8 .history-box p, .about-s2 .container .row .col-sm-8 .history-box label, .about-s3 .container .row .col-sm-3 p, #post-3 p, .content-faq .container .row p, #order-tracking .row .woocommerce p {
   font-family: 'Montserrat';
 }
 
@@ -553,10 +553,6 @@ a, .widget_recent_comments .comment-author-link a, .widget .team-person-email a:
   color: #dab26d !important;
 }
 
-#post-135 .entry-content .wp-block-preformatted .woocommerce p {
-  font-size: 16px;
-}
-
 .footer-our-brands {
   background-color: #eaeaea;
   padding-bottom: 32px;
@@ -684,4 +680,44 @@ body .woocommerce .woocommerce-cart-form .actions .submit-buttons .checkout-butt
 
 body .woocommerce .woocommerce-cart-form .actions .submit-buttons .checkout-button-button .checkout-button:hover {
   border-color: #dab26d !important;
+}
+
+#order-tracking .row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#order-tracking .row .woocommerce #orderid {
+  margin-left: 100px;
+}
+
+#order-tracking .row .woocommerce #order_email {
+  margin-left: 71px;
+}
+
+#order-tracking .row .woocommerce input[type="text"], #order-tracking .row .woocommerce input[type="email"] {
+  padding: 15px;
+  border-radius: 3px;
+  width: 50%;
+}
+
+#order-tracking .row .woocommerce button {
+  outline: none;
+  background-color: #dab26d;
+  padding: 15px;
+  width: 20%;
+  border-radius: 25px;
+  color: white;
+}
+
+#order-tracking .row .woocommerce .order-details-column h2 {
+  font-size: 21px;
+}
+
+#order-tracking .row .woocommerce .order-details-column .cart_totals table tbody {
+  text-align: left;
+}
+
+#order-tracking .woocommerce .shop_table thead tr th {
+  color: #ffffff !important;
 }

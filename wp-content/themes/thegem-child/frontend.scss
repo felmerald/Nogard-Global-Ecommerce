@@ -499,18 +499,6 @@ a, .widget_recent_comments .comment-author-link a, .widget .team-person-email a:
         }
     }
 }
-#post-135{
-    .entry-content{
-        .wp-block-preformatted{
-            .woocommerce{
-                p{
-                    @extend .font ;
-                    font-size: 16px;
-                }
-            }
-        }
-    }
-}
 .footer-our-brands{
     background-color: #eaeaea;
     padding-bottom: 32px;
@@ -673,5 +661,51 @@ body .woocommerce .woocommerce-cart-form .actions .submit-buttons .checkout-butt
     color: white !important;
     &:hover{
         border-color:#dab26d !important;
+    }
+}
+#order-tracking{
+    .row{
+        padding-top:50px;
+        padding-bottom: 50px;
+        .woocommerce{
+            p{
+                @extend .font;
+            }
+            #orderid{
+                margin-left: 100px;
+            }
+            #order_email{
+                margin-left: 71px;
+            }
+            input[type="text"],input[type="email"]{
+                padding: 15px;
+                border-radius: 3px;
+                width: 50%;
+            }
+            button {
+                outline: none;
+                background-color: #dab26d;
+                padding: 15px;
+                width: 20%;
+                border-radius: 25px;
+                color: white;
+            }
+            .order-details-column{
+                h2{
+                    font-size: 21px;
+                }
+                .cart_totals{
+                    table{
+                        tbody{
+                            text-align: left;
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+    .woocommerce .shop_table thead tr th{
+        color:#ffffff !important;
     }
 }
