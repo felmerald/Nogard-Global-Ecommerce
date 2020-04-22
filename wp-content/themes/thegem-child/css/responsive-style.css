@@ -1,0 +1,61 @@
+.c-section .container .row .contact-header > h1 {
+  font-size: 150px;
+  margin: 200px 0 100px 0; }
+.c-section .container .row .contact-header > p {
+  font-size: 40px;
+  color: #3c3950; }
+.c-section .container-map .row iframe {
+  height: 700px !important; }
+.c-section .container .row.contact-info > h2 {
+  font-size: 60px;
+  margin-bottom: 50px; }
+.c-section .container .row.contact-info > p {
+  width: 800px;
+  font-size: 24px;
+  color: #3c3950; }
+.c-section .container .row.contact-details {
+  margin-top: 100px; }
+  .c-section .container .row.contact-details .col-3 {
+    width: 33.333%;
+    float: left;
+    text-align: center; }
+    .c-section .container .row.contact-details .col-3 p.label {
+      font-size: 18px;
+      font-weight: bold;
+      color: #3c3950; }
+    .c-section .container .row.contact-details .col-3 p.info {
+      font-size: 16px;
+      color: #ababab; }
+  .c-section .container .row.contact-details .col-3::after {
+    display: block;
+    content: " ";
+    clear: both; }
+.c-section .container .row.contact-form {
+  margin-top: 150px; }
+  .c-section .container .row.contact-form > h2 {
+    font-size: 60px;
+    margin-bottom: 50px; }
+  .c-section .container .row.contact-form > p {
+    width: 800px;
+    font-size: 24px;
+    color: #3c3950; }
+  .c-section .container .row.contact-form > div {
+    margin-top: 100px; }
+    .c-section .container .row.contact-form > div form .col-sm-4 > span > input {
+      border-color: #3c3950; }
+    .c-section .container .row.contact-form > div form .col-sm-12 {
+      margin-top: 50px; }
+      .c-section .container .row.contact-form > div form .col-sm-12 > span > textarea {
+        border-color: #3c3950; }
+    .c-section .container .row.contact-form > div form p {
+      padding-left: 21px; }
+      .c-section .container .row.contact-form > div form p > input {
+        width: 200px;
+        background-color: #3c3950;
+        margin-top: 50px;
+        border: 1px solid #3c3950; }
+      .c-section .container .row.contact-form > div form p > input:hover {
+        background-color: white;
+        color: #3c3950; }
+
+/*# sourceMappingURL=responsive-style.css.map */
