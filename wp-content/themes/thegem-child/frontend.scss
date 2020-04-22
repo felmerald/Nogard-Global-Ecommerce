@@ -551,3 +551,90 @@ a, .widget_recent_comments .comment-author-link a, .widget .team-person-email a:
         margin-top: -70px;
     }
 }
+.about-s1{
+    .container{
+        .row{
+            @extend .title-group;
+            .col-sm-4{
+                img{
+                    margin-top: 57px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .col-sm-8{
+                margin-top: 31px;
+                h2{
+                    font-size: 24px;
+                    line-height: 1;
+                }
+                p{
+                    @extend .font;
+                }
+                p:first-child{
+                    
+                    padding-bottom: 15px;
+                }
+                p:last-child{
+                    padding-top:15px;
+                }
+            }
+        }
+        .row:nth-child(2){
+            margin-top:100px;
+        }
+    }
+}
+.about-s2{
+    .container{
+        .row{
+            .col-sm-8{
+                h2{
+                    font-size: 24px;
+                    line-height: 1;
+                }
+                .history-box{
+                    padding-top:15px;
+                    padding-bottom: 15px;
+                    p,label{
+                        @extend .font;
+                    }
+                    label{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .col-sm-4{
+                img{
+                    width: 100%;
+                    height: auto;
+                    margin-top: 33px;
+                }
+            }
+        }
+    }
+}
+.about-s3{
+    background-color: #dab26d;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .container{
+        .row{
+            .col-sm-3{
+                h2,p{
+                    color:#fff;
+                    text-align: center;
+                }
+                h2{
+                    font-size: 42px;
+                }
+                p{
+                    @extend .font;
+                    margin-top: -32px;
+                }
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, c
 License: GNU General Public License
 License URI: license.txt
 */
-.font, .wpsisac-slick-slider.design-3 .wpsisac-image-slide .wpsisac-slide-wrap .wpsisac-slider-short-content p, .h-section1 .container .row .product-container .product-overlay div, .h-section2 .column div p, .wpsisac-slide-wrap .wpsisac-readmore a.wpsisac-slider-readmore, .h-sale-product .container .row:nth-child(3) .box-yellow .column p, .payment-section .container .row .panel-box .info, .payment-section .container .row .panel-box .checklist, #post-135 .entry-content .wp-block-preformatted .woocommerce p {
+.font, .wpsisac-slick-slider.design-3 .wpsisac-image-slide .wpsisac-slide-wrap .wpsisac-slider-short-content p, .h-section1 .container .row .product-container .product-overlay div, .h-section2 .column div p, .wpsisac-slide-wrap .wpsisac-readmore a.wpsisac-slider-readmore, .h-sale-product .container .row:nth-child(3) .box-yellow .column p, .payment-section .container .row .panel-box .info, .payment-section .container .row .panel-box .checklist, #post-135 .entry-content .wp-block-preformatted .woocommerce p, .about-s1 .container .row .col-sm-8 p, .about-s2 .container .row .col-sm-8 .history-box p, .about-s2 .container .row .col-sm-8 .history-box label, .about-s3 .container .row .col-sm-3 p {
   font-family: 'Montserrat';
 }
 
@@ -170,7 +170,7 @@ body[data-aos-duration="7000"] [data-aos],
   display: none !important;
 }
 
-.title-group .info, .h-section1 .container .row .info, .h-sale-product .container .row .info, .best-selling .container .row .info, .footer-our-brands .container .row .info {
+.title-group .info, .h-section1 .container .row .info, .h-sale-product .container .row .info, .best-selling .container .row .info, .footer-our-brands .container .row .info, .about-s1 .container .row .info {
   font-size: 21px;
   font-weight: 100;
   text-align: center;
@@ -178,7 +178,7 @@ body[data-aos-duration="7000"] [data-aos],
   padding-bottom: 50px;
 }
 
-.title-group h1, .h-section1 .container .row h1, .h-sale-product .container .row h1, .best-selling .container .row h1, .footer-our-brands .container .row h1 {
+.title-group h1, .h-section1 .container .row h1, .h-sale-product .container .row h1, .best-selling .container .row h1, .footer-our-brands .container .row h1, .about-s1 .container .row h1 {
   margin: 100px auto;
   font-size: 40px;
   text-align: center;
@@ -187,12 +187,12 @@ body[data-aos-duration="7000"] [data-aos],
 }
 
 @media only screen and (max-width: 767px) {
-  .title-group h1, .h-section1 .container .row h1, .h-sale-product .container .row h1, .best-selling .container .row h1, .footer-our-brands .container .row h1 {
+  .title-group h1, .h-section1 .container .row h1, .h-sale-product .container .row h1, .best-selling .container .row h1, .footer-our-brands .container .row h1, .about-s1 .container .row h1 {
     line-height: 1;
   }
 }
 
-.title-group h1:before, .h-section1 .container .row h1:before, .h-sale-product .container .row h1:before, .best-selling .container .row h1:before, .footer-our-brands .container .row h1:before {
+.title-group h1:before, .h-section1 .container .row h1:before, .h-sale-product .container .row h1:before, .best-selling .container .row h1:before, .footer-our-brands .container .row h1:before, .about-s1 .container .row h1:before {
   content: "";
   display: block;
   width: 120px;
@@ -203,7 +203,7 @@ body[data-aos-duration="7000"] [data-aos],
   top: 50%;
 }
 
-.title-group h1:after, .h-section1 .container .row h1:after, .h-sale-product .container .row h1:after, .best-selling .container .row h1:after, .footer-our-brands .container .row h1:after {
+.title-group h1:after, .h-section1 .container .row h1:after, .h-sale-product .container .row h1:after, .best-selling .container .row h1:after, .footer-our-brands .container .row h1:after, .about-s1 .container .row h1:after {
   content: "";
   display: block;
   width: 120px;
@@ -588,4 +588,72 @@ a, .widget_recent_comments .comment-author-link a, .widget .team-person-email a:
 
 .footer-our-brands .wpsisac-clearfix {
   margin-top: -70px;
+}
+
+.about-s1 .container .row .col-sm-4 img {
+  margin-top: 57px;
+  width: 100%;
+  height: auto;
+}
+
+.about-s1 .container .row .col-sm-8 {
+  margin-top: 31px;
+}
+
+.about-s1 .container .row .col-sm-8 h2 {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.about-s1 .container .row .col-sm-8 p:first-child {
+  padding-bottom: 15px;
+}
+
+.about-s1 .container .row .col-sm-8 p:last-child {
+  padding-top: 15px;
+}
+
+.about-s1 .container .row:nth-child(2) {
+  margin-top: 100px;
+}
+
+.about-s2 .container .row .col-sm-8 h2 {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.about-s2 .container .row .col-sm-8 .history-box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.about-s2 .container .row .col-sm-8 .history-box label {
+  font-weight: bold;
+}
+
+.about-s2 .container .row .col-sm-4 img {
+  width: 100%;
+  height: auto;
+  margin-top: 33px;
+}
+
+.about-s3 {
+  background-color: #dab26d;
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about-s3 .container .row .col-sm-3 h2, .about-s3 .container .row .col-sm-3 p {
+  color: #fff;
+  text-align: center;
+}
+
+.about-s3 .container .row .col-sm-3 h2 {
+  font-size: 42px;
+}
+
+.about-s3 .container .row .col-sm-3 p {
+  margin-top: -32px;
 }
