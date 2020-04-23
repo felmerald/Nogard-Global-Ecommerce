@@ -108,3 +108,14 @@ if(function_exists('acf_add_options_page')){
         return $value;
       }
     add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );
+
+    //   disable admin bar to all user for security
+    // add_filter('show_admin_bar', '__return_false');
+    
+    // remove wordpress version for security
+    function wpbeginner_remove_version() {
+        return '';
+    }
+    add_filter('the_generator', 'wpbeginner_remove_version');
+
+    

@@ -13,3 +13,9 @@ RewriteRule . /nogardglobal/index.php [L]
 </IfModule>
 
 # END WordPress
+
+# Disallow all WordPress xmlrpc.php requests to this domain
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+</Files>   
