@@ -10,7 +10,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, c
 License: GNU General Public License
 License URI: license.txt
 */
-.font, .wpsisac-slick-slider.design-3 .wpsisac-image-slide .wpsisac-slide-wrap .wpsisac-slider-short-content p, .h-section1 .container .row .product-container .product-overlay div, .h-section2 .column div p, .wpsisac-slide-wrap .wpsisac-readmore a.wpsisac-slider-readmore, .h-sale-product .container .row:nth-child(3) .box-yellow .column p, .payment-section .container .row .panel-box .info, .payment-section .container .row .panel-box .checklist, .about-s1 .container .row .col-sm-8 p, .about-s2 .container .row .col-sm-8 .history-box p, .about-s2 .container .row .col-sm-8 .history-box label, .about-s3 .container .row .col-sm-3 p, #post-3 p, .content-faq .container .row p, #order-tracking .row .woocommerce p {
+.font, .wpsisac-slick-slider.design-3 .wpsisac-image-slide .wpsisac-slide-wrap .wpsisac-slider-short-content p, .h-section1 .container .row .product-container .product-overlay div, .h-section2 .column div p, .wpsisac-slide-wrap .wpsisac-readmore a.wpsisac-slider-readmore, .h-sale-product .container .row:nth-child(3) .box-yellow .column p, .payment-section .container .row .panel-box .info, .payment-section .container .row .panel-box .checklist, .about-s1 .container .row .col-sm-8 p, .about-s2 .container .row .col-sm-8 .history-box p, .about-s2 .container .row .col-sm-8 .history-box label, .about-s3 .container .row .col-sm-3 p, #post-3 p, .content-faq .container .row p, #order-tracking .row .woocommerce p, .directory-store table {
   font-family: 'Montserrat';
 }
 
@@ -720,4 +720,20 @@ body .woocommerce .woocommerce-cart-form .actions .submit-buttons .checkout-butt
 
 #order-tracking .woocommerce .shop_table thead tr th {
   color: #ffffff !important;
+}
+
+.directory-store {
+  padding-bottom: 100px;
+}
+
+.directory-store table.dataTable.no-footer {
+  border-bottom: unset !important;
+}
+
+.directory-store .dataTables_wrapper .dataTables_paginate .paginate_button.current, .directory-store .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  border: unset !important;
+}
+
+.directory-store .dataTables_wrapper .dataTables_filter input {
+  padding: 5px;
 }

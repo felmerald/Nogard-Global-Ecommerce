@@ -59,7 +59,7 @@ if(function_exists('acf_add_options_page')){
         if($args->theme_location == 'primary' && thegem_get_option('header_layout') !== 'overlay' && !thegem_get_option('hide_search_icon')) {
             $items .= '<li class="menu-item menu-item-search"><a href="#"></a>
             <div class="minisearch">
-            "'.do_shortcode("[aws_search_form]").'"
+            '.do_shortcode("[aws_search_form]").'
             </div>
             </li>';
         }
@@ -76,7 +76,7 @@ if(function_exists('acf_add_options_page')){
 
             $items .= '<li class="menu-item menu-item-widgets">
             <div class="vertical-minisearch">
-            "'.do_shortcode("[aws_search_form]").'"
+            '.do_shortcode("[aws_search_form]").'
             </div>
             <div class="menu-item-socials socials-colored">'. $socials .'</div>
             </li>';
@@ -88,7 +88,7 @@ if(function_exists('acf_add_options_page')){
         function thegem_serch_form_vertical_header($form)
         {
             return '<div class="vertical-minisearch">
-            "'.do_shortcode("[aws_search_form]").'"
+            '.do_shortcode("[aws_search_form]").'
             </div>';
         }
     }

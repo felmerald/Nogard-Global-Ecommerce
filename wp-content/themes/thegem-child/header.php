@@ -42,6 +42,9 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/aos.css"/>
+	<?php if(is_page(327)): ?>
+		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/datatables.css">
+	<?php endif; ?>
 	<?php wp_head(); ?>
 	
 
