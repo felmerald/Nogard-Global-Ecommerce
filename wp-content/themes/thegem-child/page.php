@@ -26,6 +26,8 @@ get_header(); ?>
 		get_template_part('content','customerservice');
 	}else if(is_page(135)){
 		get_template_part('content','ordertracking');
+	}else if(is_page('327')){
+		get_template_part('content','directory');
 	}else{
 		while ( have_posts() ) : the_post();
 			get_template_part( 'content', 'page' );

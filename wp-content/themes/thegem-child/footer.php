@@ -219,5 +219,15 @@
 	<script type="text/javascript">
 	AOS.init();
 	</script>
+	<?php if(is_page(327)): ?>
+		<script defer type="text/javascript" charset="utf8" src="<?php echo get_stylesheet_directory_uri(); ?>/js/dataTables.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function( $ ){
+				$(document).ready( function () {
+					$('#table_id').DataTable();
+				} );
+			});
+		</script>
+	<?php endif; ?>
 </body>
 </html>
