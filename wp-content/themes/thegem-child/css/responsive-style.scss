@@ -5,6 +5,13 @@
 }
 
 .c-section {
+	.row {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+.c-section {
 	.container {
 		.row {
 			.contact-header > {
@@ -74,7 +81,7 @@
 				float: left;
 			}
 			> div:first-child {
-				width: 375px;
+				width: 364px;
 				img {
 					position: relative;
 					left: -420px;
@@ -170,7 +177,7 @@
 				float: left;
 			}
 			> div:first-child {
-				width: 375px;
+				width: 364px;
 				img {
 					position: relative;
 					left: -420px;
@@ -191,6 +198,426 @@
 				display: block;
 				content: " ";
 				clear: both;
+			}
+		}
+	}
+}
+
+// responsive
+
+@mixin res-div {
+	width: 1212px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 21px;
+	padding-right: 21px;
+}
+
+%res-div {
+	@include res-div;
+}
+
+.res-div {
+	@extend %res-div;
+}
+
+$floatUnset: unset;
+$marginTop: 20px;
+
+@media ( max-width: 1348px ) {
+
+	.c-section {
+		.container-full {
+			@include res-div;
+			.row {
+				> div {
+					float: $floatUnset;
+				}
+
+				> div:last-child {
+					margin-top: $marginTop;
+					width: auto;
+				}
+			}
+		}
+
+		.container-full-2 {
+			@include res-div;
+			.row {
+				> div {
+					float: $floatUnset;
+				}
+
+				> div:last-child {
+					margin-top: $marginTop;
+					width: auto;
+				}
+			}
+		}
+
+		.container-full-3 {
+			@include res-div;
+			.row {
+				> div {
+					float: $floatUnset;
+				}
+
+				> div:last-child {
+					margin-top: $marginTop;
+					width: auto;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 1211px ) {
+
+	.c-section {
+		> div {
+			width: 90% !important;
+		}
+
+		.container-map {
+			width: auto !important;
+		}
+
+		.container {
+			.row.contact-details {
+				padding: 0 20px;
+			}
+		}
+	}
+}
+
+@media ( max-width: 1199px ) {
+	.c-section {
+		.container {
+			.row.contact-form {
+				> h2 {
+				    margin-top: 100px;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 1125px ) {
+	.c-section {
+		.container {
+			.row.contact-info > h2 {
+				margin-top: 200px;
+			}
+			.row.contact-details {
+				margin-top: 50px;
+				.col-3 {
+					padding-left: 21px;
+					padding-right: 21px;
+				}
+			}
+
+			.row.contact-form.mt-150 {
+				margin-top: 100px;
+			}
+		}
+	}
+}
+
+@media ( max-width: 1075px ) {
+	.c-section {
+		.container {
+			.row {
+				.contact-header > {
+					h1 {
+						font-size: 150px;
+					}
+				}
+			}
+
+			.row.contact-info > h2 {
+				text-align: center;
+				line-height: 70px;
+			}
+
+			.row.contact-form > h2 {
+				text-align: center;
+				line-height: 70px;
+			}
+		}
+	}
+}
+
+@media ( max-width: 800px ) {
+	.c-section {
+		.container {
+			.row {
+				.contact-header > {
+					h1 {
+						font-size: 120px;
+						margin-bottom: 50px;
+					}
+				}
+			}
+		}
+
+		.container-full {
+			.row {
+				> div:first-child {
+					img {
+						left: -500px;
+					}
+				}
+			}
+		}
+
+		.container-full-2 {
+			margin-top: 0;
+			.row {
+				> div:first-child img {
+					left: -500px;
+				}
+			}
+		}
+
+		.container-full-3 {
+			margin-top: 0;
+			.row {
+				> div:first-child img {
+					left: -500px;
+				}
+			}
+		}
+
+		.container .row.contact-form > h2 {
+			margin-top: 0;
+		}
+	}
+}
+
+@media ( max-width: 767px ) {
+	.c-section {
+		.container {
+			.row.contact-details {
+			    margin-top: 0;
+				.col-3 {
+					width: 100%;
+				}
+			}
+
+			.row.contact-form > div {
+				form {
+					p {
+						margin-top: 0;
+						text-align: center;
+						> input {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+@media ( max-width: 644px ) {
+	.c-section {
+		.container-full {
+			.row {
+				> div:last-child {
+					p {
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		.container-full-2 {
+			.row {
+				> div:last-child {
+					p {
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		.container-full-3 {
+			.row {
+				> div:last-child {
+					p {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 638px ) {
+	.c-section {
+		.container {
+			.row {
+				.contact-header > {
+					h1 {
+						font-size: 90px;
+					}
+				}
+			}
+
+			.row.contact-info {
+				> h2 {
+					font-size: 50px;
+					margin-bottom: 50px;
+					text-transform: capitalize;
+				}
+			}
+
+			.row.contact-form {
+				> h2 {
+					font-size: 50px;
+					margin-bottom: 50px;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 480px ) {
+	.c-section {
+		.container {
+			.row {
+				.contact-header > {
+					h1 {
+						font-size: 70px;
+					}
+				}
+			}
+
+			.row.contact-info > h2 {
+				font-size: 40px;
+				line-height: 40px;
+			}
+
+			.row.contact-form > h2 {
+				font-size: 40px;
+				line-height: 40px;
+			}
+		}
+
+		.container-full {
+			.row {
+				> div:first-child {
+					img {
+						left: -600px;
+					}
+				}
+				> div:last-child {
+					p {
+						font-size: 25px;
+					}
+				}
+			}
+		}
+
+		.container-full-2 {
+			.row {
+				> div:first-child img {
+					left: -600px;
+				}
+				> div:last-child {
+					p {
+						font-size: 18px;
+						line-height: 30px;
+					}
+				}
+			}
+		}
+
+		.container-full-3 {
+			.row {
+				> div:first-child img {
+					left: -600px;
+				}
+				> div:last-child {
+					p {
+						font-size: 18px;
+						line-height: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 400px ) {
+	.c-section {
+		.container {
+			.row {
+				.contact-header > {
+					h1 {
+						font-size: 50px;
+						text-align: center;
+					}
+				}
+			}
+
+			.row.contact-info > h2 {
+				font-size: 35px;
+			}
+
+			.row.contact-form > h2 {
+				font-size: 35px;
+			}
+		}
+
+		.container-full {
+			.row {
+				> div:first-child {
+					margin-top: 0;
+					img {
+						left: -650px;
+					}
+				}
+				> div:last-child {
+					p {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+
+		.container-full-2 {
+			.row {
+				> div:first-child img {
+					left: -650px;
+				}
+			}
+		}
+
+		.container-full-3 {
+			.row {
+				> div:first-child img {
+					left: -650px;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 368px ) {
+	.c-section {
+		.container {
+			.row.contact-form {
+				> div {
+					form {
+						p {
+							> input {
+								width: 150px !important;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
