@@ -21,6 +21,19 @@ function add_my_script(){
 	);
 	wp_enqueue_script('child-theme-script');
 }
+
+add_action('wp_enqueue_scripts','add_counter_script');
+function add_counter_script(){
+    if(is_page(169)){
+        wp_register_script(
+            'aboutus-script',
+            get_stylesheet_directory_uri().'/js/numbercounter.js',
+            array('jquery')
+        );
+        wp_enqueue_script('aboutus-script');
+    }
+}
+
 // create theme settings using ACF
 if(function_exists('acf_add_options_page')){
     
