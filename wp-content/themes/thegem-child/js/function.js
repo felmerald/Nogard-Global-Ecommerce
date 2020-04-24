@@ -20,6 +20,7 @@ jQuery(document).ready(function( $ ){
 		$(this).text(text.replace('Read More','View Category'));
 	});
 
+	var pageCount = 0;
 	var count0 = $('.about-s3 #count0').text();
 	var count1 = $('.about-s3 #count1').text();
 	var count2 = $('.about-s3 #count2').text();
@@ -30,15 +31,33 @@ jQuery(document).ready(function( $ ){
 	var half2 = (count2/2);
 	var half3 = (count3/2);
 
+	// check if div exist in viewport (desktop/tablet/mobile)
+	$.fn.isOnScreen = function(){
+	    var win = $(window);
+	    var viewport = {
+	        top : win.scrollTop(),
+	        left : win.scrollLeft()
+	    };
+	    viewport.right = viewport.left + win.width();
+	    viewport.bottom = viewport.top + win.height();
+
+	    var bounds = this.offset();
+	    bounds.right = bounds.left + this.outerWidth();
+	    bounds.bottom = bounds.top + this.outerHeight();
+
+	    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+	};
+
 	$(window).scroll(function(){
-		if ($(".about-s3").is(":visible")) {
+		if ($(".about-s3").isOnScreen() === true) {
 			// The element is visible
-			countNow("count0", half0, count0, 100);
-			countNow("count1", half1, count1, 100);
-			countNow("count2", half2, count2, 100);
-			countNow("count3", half3, count3, 100);
-		} else {
-		    // nothing element not visible
+			if (!pageCount) {
+				pageCount = 1;
+				countNow("count0", half0, count0, 5000);
+				countNow("count1", half1, count1, 100);
+				countNow("count2", half2, count2, 100);
+				countNow("count3", half3, count3, 100);
+			}
 		}
 	});
 
