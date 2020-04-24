@@ -116,14 +116,17 @@
                                 <div class="row">
                                     <?php
                                         if(have_rows('asmthree_numbers')):
+                                            $i=0;
                                             while(have_rows('asmthree_numbers')):
+
                                                 the_row();
                                     ?>
                                                     <div class="col-sm-3">
-                                                        <h2><?php echo get_sub_field('asmthreer_number'); ?></h2>
+                                                        <h2 id="count<?php echo $i;?>"><?php echo get_sub_field('asmthreer_number'); ?></h2>
                                                         <p><?php echo get_sub_field('asmthreer_info'); ?></p>
                                                     </div>
                                     <?php
+                                            $i++;
                                             endwhile;
                                         endif;
                                     ?>
