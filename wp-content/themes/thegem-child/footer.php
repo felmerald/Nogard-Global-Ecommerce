@@ -115,7 +115,8 @@
 										endwhile;
 									endif;
 								?>
-											<div class="col-sm-4" <?php echo $this_animation[1].' '.$this_duration[3]; ?> >
+									
+											<div class="col-sm-4" >
 												<p class="title">Find It Fast</p>
 												<div class="list">
 													<?php
@@ -142,8 +143,9 @@
 															endif;
 														?>
 												</div>
+											
 											</div>
-											<div class="col-sm-4" <?php echo $this_animation[1].' '.$this_duration[4]; ?>>
+											<div class="col-sm-4">
 												<p class="title">Customer Care</p>
 												<div class="list">
 													<?php
@@ -165,6 +167,7 @@
 				endwhile;
 			endif;
 		?>
+		
 
 			<?php if(thegem_get_option('footer_active') && !$header_params['footer_hide_default']) : ?>
 

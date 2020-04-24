@@ -28,6 +28,8 @@ get_header(); ?>
 		get_template_part('content','ordertracking');
 	}else if(is_page('327')){
 		get_template_part('content','directory');
+	}else if(is_page(331)){
+		get_template_part('content','delivery');
 	}else{
 		while ( have_posts() ) : the_post();
 			get_template_part( 'content', 'page' );
