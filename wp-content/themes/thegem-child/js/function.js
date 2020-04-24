@@ -26,10 +26,10 @@ jQuery(document).ready(function( $ ){
 	var count2 = $('.about-s3 #count2').text();
 	var count3 = $('.about-s3 #count3').text();
 
-	var half0 = (count0/2);
-	var half1= (count1/2);
-	var half2 = (count2/2);
-	var half3 = (count3/2);
+	var half0 = Math.round((count0/3));
+	var half1= Math.round((count1/3));
+	var half2 = Math.round((count2/3));
+	var half3 = Math.round((count3/3));
 
 	// check if div exist in viewport (desktop/tablet/mobile)
 	$.fn.isOnScreen = function(){
