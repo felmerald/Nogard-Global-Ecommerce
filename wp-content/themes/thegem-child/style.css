@@ -737,3 +737,7 @@ body .woocommerce .woocommerce-cart-form .actions .submit-buttons .checkout-butt
 .directory-store .dataTables_wrapper .dataTables_filter input {
   padding: 5px;
 }
+
+.socials-item .tumblr {
+  display: none !important;
+}
