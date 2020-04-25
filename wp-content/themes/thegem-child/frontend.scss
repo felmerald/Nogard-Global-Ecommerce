@@ -215,8 +215,26 @@ body[data-aos-duration="7000"] [data-aos],
                         position: absolute;
                         bottom: 15%;
                         width: 90%;
-                        @media only screen and  (max-width:767px){
-                            width:95%
+                        @media only screen and (min-width:801px) and (max-width:1024px){
+                            width:88%;
+                        }
+                        @media only screen and (max-width:800px){
+                            width: 84%;
+                        }
+                        @media only screen and (max-width:768px){
+                            width:84%;
+                        }
+                        @media only screen and (max-width:414px){
+                            width:90%;
+                        }
+                        @media only screen and (max-width:375px){
+                            width:89%;
+                        }
+                        @media only screen and (max-width:360px){
+                            width:88%;
+                        }
+                        @media only screen and (max-width:320px){
+                            width: 87%;
                         }
                         cursor: pointer;
                         text-align: center;
