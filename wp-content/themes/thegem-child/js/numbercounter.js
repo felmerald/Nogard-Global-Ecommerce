@@ -44,20 +44,18 @@ jQuery(document).ready(function( $ ){
 	};
 
 	$(window).scroll(function(){
-		if($(".about-s3").is(':visible')){ // condition will load only in about-s3 class
-			
+		if($(".about-s3").is(':visible')) { // condition will load only in about-s3 class
 			if ($(".about-s3").isOnScreen() === true) {
 				// The element is visible
 				if (!pageCount) {
 					pageCount = 1;
-					countNow("count0", half0, count0, 5000);
+					countNow("count0", half0, count0, 100);
 					countNow("count1", half1, count1, 100);
 					countNow("count2", half2, count2, 100);
 					countNow("count3", half3, count3, 100);
 				}
 			}
 		}
-		
 	});
 
 });
