@@ -747,3 +747,21 @@ body .woocommerce .woocommerce-cart-form .actions .submit-buttons .checkout-butt
         display: none !important;
     }
 }
+#post-81{
+    .wcfmmp_become_vendor_link{
+        padding: 10px;
+        border: 2px solid;
+        border-color: #dab26d !important;
+        margin-top: 32px;
+        border-radius: 2px;
+        width: 200px;
+        text-align: center;
+        @extend .font;
+        font-weight: bold;
+        text-transform: uppercase;
+        a{
+            color: #dab26d !important;
+            
+        }
+    }
+}
